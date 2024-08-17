@@ -10,128 +10,194 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h2>weather</h2>
-            <section class="weather-input">
-                <input type="text" name="city" id="city" placeholder="Enther city name">
-                <button type="button" id="searchBtn">
-                    <i class="fa-regular fa-search"></i>Search
-                </button>
-                <button type="button" id="locationBtn">
-                    <i class="bx bx-target-lock"></i>Current Location
-                </button>
+    <section id="container">
+        <header id="head">
+            <section class="header">
+                <h2>Weather</h2>
+            </section>
+            <section class="header">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button type="button" id="searchBtn">Search</button>
+                <button type="button" id="locationBtn">Current Location</button>
             </section>
         </header>
-        <section class="weather-data">
-            <section class="weather-left">
-                <section class="card">
-                    <div class="current-weather">
-                        <div class="details">
-                            <p>Now</p>
-                            <h2>__&deg;C</h2>
-                            <p>_____</p>
-                        </div>
-                        <div class="weather-icon">
-                           <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                        </div>
-                    </div>
+        <div id="weather">
+            <div id="weather-card">
+                <section id="today" class="forecast">
+                    <p>Now</p>
+                    <h2>_____&deg;C</h2>
+                    <p>mist</p>
                     <hr>
-                    <div class="card-footer">
-                        <p><i class="fad fa-calendar" style="--fa-primary-color: #87a3c9; --fa-secondary-color: #aeb5c2;"></i></i>_____</p>
-                        <p><i class="fa fa-location"></i>_____</p>
-                    </div>
+                    <p id="date">date</p>
+                    <p id="city">city</p>
+
                 </section>
-                <br>
-                <section class="card">
-                    <h2>5 days Forcast</h2>
-                    <div class="day-forecast">
-                        <div class="forecast-item">
-                            <div class="icon-wrapper">
-                                <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forecast-item">
-                            <div class="icon-wrapper">
-                                <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forecast-item">
-                            <div class="icon-wrapper">
-                                <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forecast-item">
-                            <div class="icon-wrapper">
-                                <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forecast-item">
-                            <div class="icon-wrapper">
-                                <img src="./assets/images/cloudy.png" alt="" height="40" width="40">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                    </div>
+                <section id="fivedays" class="forecast">
+                    <h2>5 Days Forecast</h2>
+                    <section class="report">
+                        <div class="icon"></div>
+                        <h4>_____&deg;C</h4>
+                        <p class="date"></p>-----<p class="day">------</p>
+                    </section>
+                    <section class="report">
+                        <div class="icon"></div>
+                        <h4>_____&deg;C</h4>
+                        <p class="date"></p>-----<p class="day">------</p>
+                    </section>
+                    <section class="report">
+                        <div class="icon"></div>
+                        <h4>_____&deg;C</h4>
+                        <p class="date"></p>-----<p class="day">------</p>
+                    </section>
+                    <section class="report">
+                        <div class="icon"></div>
+                        <h4>_____&deg;C</h4>
+                        <p class="date"></p>-----<p class="day">------</p>
+                    </section>
+                    <section class="report">
+                        <div class="icon"></div>
+                        <h4>_____&deg;C</h4>
+                        <p class="date"></p>-----<p class="day">------</p>
+                    </section>
+
                 </section>
-            </section>
-            <div class="weather right">
-                <h2>Today's Highlights</h2>
-                <div class="highlights">
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-1">Good</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-2">Good</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-3">Good</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-4">Good</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-5">Good</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <p>Air Quality Index</p>
-                            <p class="air-index aqi-5">Good</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-    </div>
+            <div id="highlights">
+                <section>
+                    <h3>Today's Highlights</h3>
+                </section>
+                <section id="card">
+                    <div id="air-index">
+                        <section id="air-head">
+                            <p>Air Quality index</p>
+                            <p>Good</p>
+                        </section>
+                        <section id="air-report">
+                            <div class="air">
+                                <p>PM2.5</p>
+                                <h3>5.18</h3>
+                            </div>
+                            <div class="air">
+                                <p>PM10</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>SO2</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>CO</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>NO</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>NO2</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>NH</p>
+                                <h3>_____</h3>
+                            </div>
+                            <div class="air">
+                                <p>O3</p>
+                                <h3>_____</h3>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="sunrise">
+                        <section>
+                            <p>Sunrise & Sunset</p>
+                        </section>
+                        <section class="suntime">
+                            <div>
+                                <section><i>asfsfsfsf</i></section>
+                                <section>
+                                    <p>Sunrise</p>
+                                    <h2>08.21AM</h2>
+                                </section>
+                            </div>
+                            <div>
+                                <section><i>sfsfsfsfs</i></section>
+                                <section>
+                                    <p>Sunset</p>
+                                    <h2>08.21AM</h2>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section id="utility">
+                    <div class="util">
+                        <p>Humidity</p>
+                        <section><i>____</i>
+                            <p>%</p>
+                        </section>
+                    </div>
+                    <div class="util">
+                        <p>Pressure</p>
+                        <section><i>____</i>
+                            <p>hPa</p>
+                        </section>
+                    </div>
+                    <div class="util">
+                        <p>Visibility</p>
+                        <section><i>____</i>
+                            <p>km</p>
+                        </section>
+                    </div>
+                    <div class="util">
+                        <p>Wind Speed</p>
+                        <section><i>____</i>
+                            <p>m/s</p>
+                        </section>
+                    </div>
+                    <div class="util">
+                        <p>Feels Like</p>
+                        <section><i>____</i>
+                            <p>23.24&deg;C</p>
+                        </section>
+                    </div>
+                </section>
+                <section id="timeing">
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                    <div class="time-weather">
+                        <p>9 AM</p><i></i>
+                        <p>___&deg;C</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
