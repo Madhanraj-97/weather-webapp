@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather app</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1f21a32ab4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
 </head>
 
 <body>
@@ -17,8 +28,9 @@
             </section>
             <section class="header">
                 <input type="text" id="city" placeholder="Enter city name">
-                <button type="button" id="searchBtn">Search</button>
-                <button type="button" id="locationBtn">Current Location</button>
+                <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"> </i> Search</button>
+                <button type="button" id="locationBtn"><i class="fa-solid fa-location-dot"> </i> Current
+                    Location</button>
             </section>
         </header>
         <div id="weather">
@@ -27,6 +39,9 @@
                     <p>Now</p>
                     <h2>_____&deg;C</h2>
                     <p>mist</p>
+                    <span class="material-symbols-outlined">
+                        clear_day
+                    </span>
                     <hr>
                     <p id="date">date</p>
                     <p id="city">city</p>
@@ -113,14 +128,14 @@
                         </section>
                         <section class="suntime">
                             <div>
-                                <section><i>asfsfsfsf</i></section>
+                                <section  class="sunicon"><i class="fa-thin fa-sunrise fa-2xl"></i></section>
                                 <section>
                                     <p>Sunrise</p>
                                     <h2>08.21AM</h2>
                                 </section>
                             </div>
                             <div>
-                                <section><i>sfsfsfsfs</i></section>
+                                <section   class="sunicon"><i class="fa-thin fa-sunset fa-2xl"></i></section>
                                 <section>
                                     <p>Sunset</p>
                                     <h2>08.21AM</h2>
@@ -132,31 +147,31 @@
                 <section id="utility">
                     <div class="util">
                         <p>Humidity</p>
-                        <section><i>____</i>
+                        <section><i class="fa-regular fa-droplet-percent fa-2xl" ></i>
                             <p>%</p>
                         </section>
                     </div>
                     <div class="util">
                         <p>Pressure</p>
-                        <section><i>____</i>
+                        <section><i class="fa-light fa-gauge-max fa-2xl"></i>
                             <p>hPa</p>
                         </section>
                     </div>
                     <div class="util">
                         <p>Visibility</p>
-                        <section><i>____</i>
+                        <section><i class="fa-light fa-eye fa-2xl"></i>
                             <p>km</p>
                         </section>
                     </div>
                     <div class="util">
                         <p>Wind Speed</p>
-                        <section><i>____</i>
+                        <section><i class="fa-light fa-windsock fa-2xl"></i>
                             <p>m/s</p>
                         </section>
                     </div>
                     <div class="util">
                         <p>Feels Like</p>
-                        <section><i>____</i>
+                        <section><i class="fa-light fa-temperature-list fa-2xl"></i>
                             <p>23.24&deg;C</p>
                         </section>
                     </div>
@@ -198,6 +213,7 @@
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 
 </html>
